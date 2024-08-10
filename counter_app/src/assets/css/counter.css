@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    outline: none;
+  }
+
+body {
+    background-color: #4c4c4c;
+}
+
+.appContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem;
+}
+
+.appName{
+    margin-bottom: 3rem;
+}
+.counter{
+    background-color: #3c3c3c;
+    border-radius: .3rem;
+    box-shadow: 0 0 .2rem inset;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    width: 100%;
+    max-width: 30rem;    
+}
+
+.btns{
+    display: flex;
+    gap: 0.5rem;
+}
+
+.btns button{
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    display: flex;
+    padding: 0.4rem;
+    transition: all 0.15s;
+}
+
+.btns button:hover{
+    transform: scale(1.1);
+    background-color: orange;
+    color: white;
+}
+
+.btns button:disabled{
+    background-color: firebrick;
+    color: white;
+}
